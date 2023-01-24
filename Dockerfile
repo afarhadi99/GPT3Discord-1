@@ -28,4 +28,5 @@ RUN mkdir -p /opt/gpt3discord/etc
 COPY gpt3discord.py /opt/gpt3discord/bin/
 COPY image_optimizer_pretext.txt conversation_starter_pretext.txt conversation_starter_pretext_minimal.txt /opt/gpt3discord/share/
 COPY openers /opt/gpt3discord/share/openers
+EXPOSE 8080
 CMD ["python3", "/opt/gpt3discord/bin/gpt3discord.py"]
